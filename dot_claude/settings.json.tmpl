@@ -1,0 +1,18 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "YOUR_ANTHROPIC_API_TOKEN_HERE",
+    "ANTHROPIC_BASE_URL": "{{ .anthropicBaseUrl | default "https://api.anthropic.com" }}",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+  },
+  "extraKnownMarketplaces": {
+    "omc": {
+      "source": {
+        "source": "github",
+        "repo": "Yeachan-Heo/oh-my-claudecode"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "omc": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "cdf119d344ef40c0b65f3669180ba108.yboLPS8ntwadBMRA",
+    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+  },
+  "extraKnownMarketplaces": {
+    "omc": {
+      "source": {
+        "source": "github",
+        "repo": "Yeachan-Heo/oh-my-claudecode"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "omc": true
+  }
+}

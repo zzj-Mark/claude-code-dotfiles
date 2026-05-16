@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(claude --version)",
+      "Bash(claude *)",
+      "Bash(ping *)",
+      "Bash(xargs -I {} basename {})",
+      "Bash(~/.local/bin/chezmoi *)",
+      "Bash(curl *)"
+    ]
+  }
+}
