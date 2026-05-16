@@ -3,3 +3,6 @@
 .claude/file-history/
 .claude/shell-snapshots/
 .claude/session-env/
+.omc/
+.session-stats.json
+.credentials.json

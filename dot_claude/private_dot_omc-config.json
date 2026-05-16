@@ -1,0 +1,14 @@
+{
+  "defaultExecutionMode": "ultrawork",
+  "configuredAt": "2026-05-16T15:12:19Z",
+  "team": {
+    "ops": {
+      "maxAgents": 3,
+      "defaultAgentType": "claude",
+      "monitorIntervalMs": 30000,
+      "shutdownTimeoutMs": 15000
+    }
+  },
+  "setupCompleted": "2026-05-16T22:37:35+00:00",
+  "setupVersion": "4.14.0"
+}

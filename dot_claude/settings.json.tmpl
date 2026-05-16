@@ -1,18 +1,25 @@
 {
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "YOUR_ANTHROPIC_API_TOKEN_HERE",
-    "ANTHROPIC_BASE_URL": "{{ .anthropicBaseUrl | default "https://api.anthropic.com" }}",
-    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+    "ANTHROPIC_BASE_URL": "{{ .anthropicBaseUrl | default "https://open.bigmodel.cn/api/anthropic" }}",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "enabledPlugins": {
+    "omc": true,
+    "oh-my-claudecode@omc": true
   },
   "extraKnownMarketplaces": {
     "omc": {
       "source": {
-        "source": "github",
-        "repo": "Yeachan-Heo/oh-my-claudecode"
+        "source": "git",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
       }
     }
   },
-  "enabledPlugins": {
-    "omc": true
+  "statusLine": {
+    "type": "command",
+    "command": "node ${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hud/omc-hud.mjs"
   }
 }
